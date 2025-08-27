@@ -204,7 +204,7 @@ const config: z.input<typeof Schema_Config> = {
      * The site password are set from Environment Variable (NEXT_GDRIVE_INDEX_PASSWORD)
      * It's because I don't want to store sensitive data in the code
      */
-    privateIndex: true,
+    privateIndex: false,
 
     /**
      * Maximum breadcrumb length
