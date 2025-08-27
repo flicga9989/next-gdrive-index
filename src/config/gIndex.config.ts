@@ -47,7 +47,7 @@ const config: z.input<typeof Schema_Config> = {
      * Then, copy the folder id and paste it here
      */
     rootFolder:
-      "5ac58538c68eb781d8e55472b71d82f2233976b88b42069971bdafe819144e487621e7f3f3d44292dc2824a4a7b8700791;b65c97eab6daf4638fabbc86",
+      "204167dcf5e41ce13b296826eb4f843c3a6e559cbd7b61550f5fbee344a04faa18dbb13ca968632739654524e34ea264f8;00aa1101705bec4b7c96b2eb",
 
     /**
      * If your rootfolder inside a shared drive, you NEED to set this to true
@@ -204,7 +204,7 @@ const config: z.input<typeof Schema_Config> = {
      * The site password are set from Environment Variable (NEXT_GDRIVE_INDEX_PASSWORD)
      * It's because I don't want to store sensitive data in the code
      */
-    privateIndex: false,
+    privateIndex: true,
 
     /**
      * Maximum breadcrumb length
