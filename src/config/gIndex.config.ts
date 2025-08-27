@@ -27,7 +27,7 @@ const config: z.input<typeof Schema_Config> = {
    *
    * @default false
    */
-  showGuideButton: false,
+  showGuideButton: true,
 
   /**
    * How long the cache will be stored in the browser
@@ -35,7 +35,7 @@ const config: z.input<typeof Schema_Config> = {
    *
    * @default "public, max-age=60, s-maxage=60, stale-while-revalidate"
    */
-  cacheControl: "public, max-age=60, s-maxage=60, stale-while-revalidate",
+  cacheControl: "max-age=60, s-maxage=60, stale-while-revalidate",
 
   apiConfig: {
     /**
@@ -47,7 +47,7 @@ const config: z.input<typeof Schema_Config> = {
      * Then, copy the folder id and paste it here
      */
     rootFolder:
-      "204167dcf5e41ce13b296826eb4f843c3a6e559cbd7b61550f5fbee344a04faa18dbb13ca968632739654524e34ea264f8;00aa1101705bec4b7c96b2eb",
+      "945572148b3e47e9c85878ea2d51982bcf389febfaf50daed1da36f0b3a31f7ff1fb667473184e1d1552685eee510c17d4;dcaa50e37912f5e965e69920",
 
     /**
      * If your rootfolder inside a shared drive, you NEED to set this to true
@@ -146,7 +146,7 @@ const config: z.input<typeof Schema_Config> = {
      *
      * Default: false
      */
-    allowDownloadProtectedFile: false,
+    allowDownloadProtectedFile: true,
 
     /**
      * Duration in hours.
@@ -176,7 +176,7 @@ const config: z.input<typeof Schema_Config> = {
     siteNameTemplate: "%s - %t",
     siteDescription: "Indexer",
     siteIcon: "/logo.svg",
-    siteAuthor: "mbaharip",
+    siteAuthor: "",
     favIcon: "/favicon.png",
     /**
      * Next.js Metadata robots object
@@ -184,7 +184,7 @@ const config: z.input<typeof Schema_Config> = {
      * ref: https://nextjs.org/docs/app/api-reference/functions/generate-metadata#robots
      */
     robots: "noindex, nofollow",
-    twitterHandle: "@mbaharip_",
+    twitterHandle: "",
 
     /**
      * Show file extension on the file name
